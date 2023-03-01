@@ -1,0 +1,39 @@
+GET http://localhost:4000/users
+
+###
+GET http://localhost:4000/users/63dfe1ac7dfb87e874734d98
+
+###
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+  "name": "Dhea",
+  "email": "email@gmail.com",
+  "gender": "Female"
+}
+
+###
+PATCH http://localhost:4000/users/63dfe1ac7dfb87e874734d98
+Content-Type: application/json
+
+{
+  "name": "Britney",
+  "email": "email@gmail.com",
+  "gender": "Female"
+}
+
+###
+DELETE  http://localhost:4000/users/63dfe1ac7dfb87e874734d98
+
+###
+POST http://localhost:4000/signup
+Content-Type: application/json
+
+{
+  "name": "obi",
+  "email": "obi@gmail.com",
+  "gender": "Male",
+  "password": "coba123",
+  
+}
